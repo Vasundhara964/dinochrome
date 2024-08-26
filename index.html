@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CHROME DINO GAME </title>
+    
+</head>
+
+<body>
+    <div class="beforecontent">
+        <p>Press <b>&#8592;</b> to move left</p>
+        <p>Press <b>&#8594;</b> to move right</p>
+        <p>Press <b>&#8593;</b> to Jump</p>
+        <p>Press <b>&#8593;</b> and <b>&#8594;</b> to skip Cactus</p>
+    </div>
+    <div class="gamecontainer">
+        <!-- <img src="./background.jpg" alt="bg"> -->
+        <button id="btn" onclick="Startgame()">Start Game</button>
+        <button id="btn2" onClick="window.location.reload()">Play Again</button>
+        <audio src="./game over sound.wav" id="gameo" type="audio/mpeg"></audio>
+        <audio src="./success-1-6297.mp3" loop type="audio/mpeg" id="gamestart"></audio>
+        <audio src="./Jump Sound.mp3" id="jump_audio"></audio>
+        <div class="score">Your Score : 0</div>
+        <div class="gameover">Welcome to Dino Game</div>
+        <!-- <div class="gameover sco"></div> -->
+        <div class="player"></div>
+        <div class="dragon movedragon"></div>
+        <div class="dragon2 movedragon2"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
